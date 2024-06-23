@@ -1,0 +1,41 @@
+OpenWAl
+
+    WriteEntry
+    CreateCheckpoint
+    writeEntry  
+    writeEntryToBuffer
+    rotateLogIfNeeded
+    rotateLog
+    deleteOldestSegment
+    findOldestSegmentFile
+    Close
+    ReadAll
+    ReadAllFromOffset
+    readAllEntriesFromFile
+    Sync
+    resetTimer
+    keepSyncing
+    Repair
+    replaceWithFixedFile
+    getLastSequenceNo
+    getLastEntryInLog
+-----------------------
+    load 
+    aooendSegement 
+    resetLastSegement
+    closeLastSegment
+    loadSegenet
+    reset 
+    Write
+    Flush
+    flush 
+    FirstIndex
+    LastIndex
+    searchSegmentIndex
+    IsExist
+    checkIndex
+    ReadIndex (Read)
+    Clean
+    Truncate
+    copy
+    Indexname 
