@@ -4,6 +4,7 @@ The Write-Ahead Log (WAL) is a logging mechanism used in databases and distribut
 “Also known as: Commit Log”
 
 ## Architecture of Write-Ahead Log (WAL)
+
 ![alt text](image.png)
 
 The diagram provided shows a client interacting with a KVStore, which uses a Write-Ahead Log (WAL) to ensure data durability and consistency. Here’s how we can simplify and explain this architecture:
