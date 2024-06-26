@@ -1,0 +1,42 @@
+Data Replication{
+	WAL // Done
+	Segement Log //In Progress 
+	Low-Water Mark //In Progress 
+	Leader and follower //In Progress 
+	HeartBeat //In Progress 
+	Paxos //In Progress 
+	raft  //In Progress 
+	Replicated log //In Progress 
+	Quorum  //In Progress 
+	Generation Clock //In Progress 
+	High-water Mark //In Progress 
+	Singular Update Queues //In Progress 
+	Request waiting List //In Progress 
+	Idempotent Receiver //In Progress 
+	Follower Reads //In Progress 
+	Versioned value  //In Progress 
+	Version vector //In Progress 
+}
+
+Data Partition{
+	Fixed partition //In Progress 
+	Key-Range partition  //In Progress 
+	Two Phase Commit  //In Progress 
+	Event Sourcing //In Progress 
+	Sharded Replication //In Progress 
+}
+
+_ Consistency{
+	Eventual Consistency //In Progress 
+	Strong Consistency //In Progress 
+	Causal Consistency //In Progress 
+	Gossip Protocol //In Progress 
+	Read-Your-Writes Consistency //In Progress 
+	Monotonic Reads //In Progress 
+	Monotonic Writes //In Progress 
+	Sequential Consistency //In Progress 
+	Bounded Staleness //In Progress 
+	Session Consistency //In Progress 
+	Tunable Consistency //In Progress 
+	Linearizability //In Progress 
+}
