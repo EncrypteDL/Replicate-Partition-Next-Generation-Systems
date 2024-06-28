@@ -16,6 +16,7 @@ A segmented log is a technique used in distributed systems to manage logs by div
 - Event Sourcing: Applications using event sourcing can benefit from segmented logs for managing event histories.
 - Logging Systems: Systems that require high-throughput logging can use segmented logs to handle large volumes of log data.
 
+``{Raft, Kafka, Zookeeper, Cassandra}``
 
 ## Problems Addressed by Segmented Log:
 - Scalability: By breaking the log into segments, the system can handle larger logs more efficiently.
