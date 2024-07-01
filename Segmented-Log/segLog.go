@@ -14,25 +14,6 @@ type segmentedlog struct {
 	SegementID string
 }
 
-// index will store mapping between recordID and recordOffset
-// it will maintain it in memory and in index file
-type index struct {
-	mm      mmap.MMap
-	idxFile *os.File
-	maxSize uint64
-	size    uint64
-	id      uint64
-	startID uint64
-}
-
-// store defines a storage abstraction for the log
-// log is append only file
-type store struct {
-	file    *os.File
-	size    uint64
-	maxSize uint64
-}
-
 func NewSegement(indexFile string, storeFile string, startID uint64, cfg *Config) (*segmentedlog, error) {
 	index, err := newIndex(indexFile, cfg, startID)
 	if err != nil {
