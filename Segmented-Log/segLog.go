@@ -1,15 +1,12 @@
 package segmentedlog
 
 import (
-	"os"
 	"path/filepath"
 	"strings"
-
-	"github.com/edsrzf/mmap-go"
 )
 
 type segmentedlog struct {
-	index      *index
+	index      *Index
 	store      *store
 	SegementID string
 }
@@ -17,11 +14,11 @@ type segmentedlog struct {
 func NewSegement(indexFile string, storeFile string, startID uint64, cfg *Config) (*segmentedlog, error) {
 	index, err := newIndex(indexFile, cfg, startID)
 	if err != nil {
-		return err
+		return nil, err
 	}
 	store, err := newStore(storeFile, cfg)
 	if err != nil {
-		return err
+		return nil, err
 	}
 
 	sp := strings.Split(filepath.Base(indexFile), "*")
@@ -53,7 +50,7 @@ func (s *segmentedlog) write(data []byte) (uint64, error) {
 		return 0, err
 	}
 
-	id, err := s.index.write(offset)
+	id, err := s.index.Write(offset)
 	if err != nil {
 		return 0, err
 	}
@@ -61,8 +58,8 @@ func (s *segmentedlog) write(data []byte) (uint64, error) {
 	return id, nil
 }
 
-func (s *segment) close() error {
-	err := s.idx.close()
+func (s *segmentedlog) close() error {
+	err := s.index.close()
 	if err != nil {
 		return err
 	}

@@ -1,4 +1,5 @@
-package util
+package segmentedlog
+
 
 const (
 	defaultStoreSize = 1 << 10

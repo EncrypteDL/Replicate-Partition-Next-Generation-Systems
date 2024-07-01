@@ -1,4 +1,6 @@
-package util
+package segmentedlog
+
+
 import (
 	"encoding/binary"
 	"errors"
