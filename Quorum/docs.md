@@ -1,0 +1,2 @@
+# Quorum DS
+In distributed systems, a quorum is the minimum number of votes or acknowledgments required for a transaction to be considered valid or for a decision to be made. This concept ensures that operations are consistent and reliable, even in the presence of network partitions or node failures.
