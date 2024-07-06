@@ -1,6 +1,6 @@
 Data Replication{
 	WAL // Done
-	Segement Log //In Progress 
+	Segement Log //Done
 	Low-Water Mark //In Progress 
 	Leader and follower //In Progress 
 	HeartBeat //In Progress 
