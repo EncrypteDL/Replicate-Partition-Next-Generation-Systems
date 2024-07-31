@@ -1,7 +1,7 @@
 Data Replication{
 	WAL // Done
 	Segement Log //Done
-	Low-Water Mark //In Progress 
+	Low-Water Mark //Done
 	Leader and follower //In Progress 
 	HeartBeat //In Progress 
 	Paxos //In Progress 
